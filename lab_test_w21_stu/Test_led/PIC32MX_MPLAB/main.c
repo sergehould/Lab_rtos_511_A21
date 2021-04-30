@@ -30,7 +30,7 @@ int main( void )
     //initIO();
     //LCDInit();
     //initUart1();
-    initUart2_wInt();
+    //initUart2_wInt();
     
     //fprintf2(C_UART1, "Hi Uart1\n");
     
