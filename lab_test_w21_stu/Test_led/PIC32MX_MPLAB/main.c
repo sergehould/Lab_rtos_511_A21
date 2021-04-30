@@ -1,7 +1,7 @@
   
 /* ***************************************************************************
  * File: main.c
- * Description: Main source file for all Embedded Operating Systems labs.
+ * Description: 
  *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * Author        	Date      		Comments on this revision
  *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -36,7 +36,7 @@ int main( void )
     
     /* create tasks here */
     
-    vStartTask1();
+
     vTaskStartScheduler();
 	return 0;
 }
