@@ -13,7 +13,7 @@
 #include "semphr.h"
 #include "include/console32.h"
 #include "include/public.h"
-#include <sys/attribs.h>
+#include <sys/attribs.h>   
 
 /* */
 void __ISR( _UART_2_VECTOR, IPL1SOFT) U2RXInterrupt( void){
