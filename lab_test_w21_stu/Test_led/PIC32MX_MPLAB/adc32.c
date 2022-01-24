@@ -22,8 +22,7 @@
 //So just read out AN2 (remember to adjust AD1PCFG and AD1CHS) instead and
 //you will get a perfect representation of your potmeter's position!
 
-#include "adc32.h"
-#include "configuration.h"
+#include "include/adc32.h"
 
 /* initialize the ADC for single conversion, select Analog input pins */
 void initADC(void) 
@@ -43,9 +42,7 @@ void initADC(void)
   Comment:          
   Usage:           
 */
-#ifndef  SIMULATION
-/* In simulation mode, reaADC() is provided by DCMotor_model3.c */
-/* In target mode,  reaADC() is provided respectively by adc32.c */
+
 int readADC( int ch)
 {
     // adc pin the pin should be configured as an
@@ -64,5 +61,3 @@ int readADC( int ch)
     }
     return ADC1BUF0; // read the buffer with the result
 } // readADC
-
-#endif
