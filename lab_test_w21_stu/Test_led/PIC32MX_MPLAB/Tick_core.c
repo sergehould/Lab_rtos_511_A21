@@ -5,7 +5,7 @@
  *      The core timer increments once for every two ticks of SYSCLK
  *      For a SYSCLK of 80 MHz, the timer increments every 25 ns. 
  *      Because the timer is 32 bits, it rolls over every 
- *      232 × 25 ns = 107 s.
+ *      232 Ã— 25 ns = 107 s.
  * 
  * Author   Date            Comments
  * SH       28 Jan 2021     v1.0
@@ -22,7 +22,7 @@
  **/
 #include <xc.h>
 #include <stdint.h>
-#include "Tick_core.h"
+#include "include/Tick_core.h"
 
 
 /* Blocking delay function using tick_core */
