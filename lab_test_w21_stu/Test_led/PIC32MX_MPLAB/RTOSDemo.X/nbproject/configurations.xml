@@ -21,6 +21,7 @@
       <itemPath>../include/ConfigPerformance.h</itemPath>
       <itemPath>../include/Tick_core.h</itemPath>
       <itemPath>../include/console32.h</itemPath>
+	  <itemPath>../include/adc32.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -48,6 +49,7 @@
       <itemPath>../vtask2.c</itemPath>
       <itemPath>../Tick_core.c</itemPath>
       <itemPath>../console32.c</itemPath>
+	  <itemPath>../adc32.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
