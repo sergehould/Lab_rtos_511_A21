@@ -25,7 +25,7 @@
  
 #pragma config FPLLMUL = MUL_20
 #pragma config FPLLIDIV = DIV_4
-#pragma config FPLLODIV = DIV_2 
+#pragma config FPLLODIV = DIV_4
 #pragma config POSCMOD = HS, FNOSC = PRIPLL
 #pragma config FPBDIV = DIV_1  // PBCLK = SYSCLK/DIV_1
 #pragma config FWDTEN =  OFF    // disable
