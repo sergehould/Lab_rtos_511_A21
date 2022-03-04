@@ -1381,21 +1381,20 @@ int  fprintf2(int mode, char *buffer){
     switch(mode){
         case C_UART1:
         /* Uart1 */
-            
-//            for (i = len; i; --i){
-//                UART1_Write(*(char*)buffer++);
-//            }
-            //return(len);
+            for (i = len; i; --i){
+                UART1_Write(*(char*)buffer++);
+            }
+            return(len);
             break;
         /* Uart2 */
         case C_UART2:
-//            while(U2STAbits.TRMT == 0);  
-//                for (i = len; i; --i)
-//                {
-//                    while(U2STAbits.TRMT == 0);
-//                    U2TXREG = *(char*)buffer++;        
-//                }
-                //return(len);
+            while(U2STAbits.TRMT == 0);  
+                for (i = len; i; --i)
+                {
+                    while(U2STAbits.TRMT == 0);
+                    U2TXREG = *(char*)buffer++;        
+               }
+                return(len);
             break;
         /* LCD */
         case C_LCD:
